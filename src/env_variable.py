@@ -8,6 +8,6 @@ DOT_PATH = find_dotenv() # this line work in in background finding the .env file
 load_dotenv(DOT_PATH) 
 print(F" .ENV_PATH :{DOT_PATH}")
 
-YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY") # here we could have used YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY") cause os.environ is a special dic that hold all env variable.
 
 print(f"YOUTUBE API KEY : {YOUTUBE_API_KEY}")
